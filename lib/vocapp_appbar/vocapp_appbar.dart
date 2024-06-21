@@ -1,0 +1,1 @@
+export "./vocapp_appbar_component.dart";
