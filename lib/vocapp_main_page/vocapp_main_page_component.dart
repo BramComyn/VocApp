@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "../vocapp_appbar/vocapp_appbar.dart";
+import "../vocapp_word_pair/vocapp_word_pair.dart";
 
 class VocAppMainPageComponent extends StatelessWidget {
   const VocAppMainPageComponent({Key? key}) : super(key: key);
@@ -8,19 +9,9 @@ class VocAppMainPageComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: VocAppAppBarComponent(),
-      body: const Center( // TODO: wrap in new component
-        child: const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            const Card(), const Card(), const VocAppCheckButtonComponent(onPressed: checkFunction),
-          ],
-        ),
+      body: const Center(
+        child: const VocAppWordPairComponent(),
       ),
     );
   }
-}
-
-// TODO: remove
-void checkFunction() {
-  print("Check translation");
 }

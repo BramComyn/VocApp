@@ -1,0 +1,1 @@
+export "./vocapp_word_pair_component.dart";
